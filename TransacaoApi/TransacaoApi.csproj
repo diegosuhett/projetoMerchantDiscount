@@ -2,20 +2,25 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.1</TargetFramework>
+    <PreserveCompilationContext>true</PreserveCompilationContext>
+    <AssemblyName>TransacaoApi</AssemblyName>
+    <PackageId>TransacaoApi</PackageId>
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="wwwroot\" />
+    <None Update="Views;Areas\**\Views">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </None>
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="Google.Cloud.Diagnostics.AspNetCore" Version="2.0.1" />
     <PackageReference Include="Microsoft.AspNetCore.App" />
-    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All" />
-    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.1" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.1" PrivateAssets="All" />
   </ItemGroup>
 
   <ItemGroup>
-    <Content Update="MerchantDiscountRates.json">
+    <Content Update="merchantDiscountRates.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>

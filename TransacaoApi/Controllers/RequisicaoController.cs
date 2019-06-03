@@ -54,7 +54,7 @@ namespace TransacaoApi.Controllers
             List<MerchantDiscountReturn> listaAdq = new List<MerchantDiscountReturn>();
             List<Taxa> taxas = new List<Taxa>();
 
-            if(adquirente != null)
+            if (adquirente != null)
             {
                 foreach (MerchantDiscount mer in Utils.mdr)
                 {
@@ -74,11 +74,11 @@ namespace TransacaoApi.Controllers
 
             return retorno;
         }
-        
+
         // POST
         [HttpPost]
         public string transaction([FromBody] Requisicao requisicao)
-        {            
+        {
             if (requisicao != null && !requisicao.EhValida())
             {
                 return Newtonsoft.Json.JsonConvert.SerializeObject("Parametros inválidos");

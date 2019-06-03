@@ -10,7 +10,7 @@ namespace TransacaoApi.Models
         public RequisicaoReturn()
         {
         }
-        
+
         public void CalculaValorLiquido(string adquirente, string bandeira, string tipo, double valorBruto)
         {
             double taxa = 0;
@@ -22,14 +22,15 @@ namespace TransacaoApi.Models
                     if (tipo.ToLower().Equals("credito"))
                     {
                         taxa = mer.Credito;
-                    }else if (tipo.ToLower().Equals("debito"))
+                    }
+                    else if (tipo.ToLower().Equals("debito"))
                     {
                         taxa = mer.Debito;
                     }
                 }
             }
 
-            this.ValorLiquido = valorBruto * ((100 - taxa)/100);
+            this.ValorLiquido = valorBruto * ((100 - taxa) / 100);
         }
     }
 }
