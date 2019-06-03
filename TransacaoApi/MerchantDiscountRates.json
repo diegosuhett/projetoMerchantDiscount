@@ -1,0 +1,38 @@
+[
+  {
+    "Adquirente": "A",
+    "Bandeira": "Visa",
+    "Credito": 2.25,
+    "Debito": 2.00
+  },
+  {
+    "Adquirente": "A",
+    "Bandeira": "Master",
+    "Credito": 2.35,
+    "Debito": 1.98
+  },
+  {
+    "Adquirente": "B",
+    "Bandeira": "Visa",
+    "Credito": 2.50,
+    "Debito": 2.08
+  },
+  {
+    "Adquirente": "B",
+    "Bandeira": "Master",
+    "Credito": 2.65,
+    "Debito": 1.75
+  },
+  {
+    "Adquirente": "C",
+    "Bandeira": "Visa",
+    "Credito": 2.75,
+    "Debito": 2.16
+  },
+  {
+    "Adquirente": "C",
+    "Bandeira": "Master",
+    "Credito": 3.10,
+    "Debito": 1.58
+  }
+]
