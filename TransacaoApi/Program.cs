@@ -23,7 +23,7 @@ namespace TransacaoApi
 
         public static void Main(string[] args)
         {
-            var json = File.ReadAllText(AppDomain.CurrentDomain.BaseDirectory + @"/merchantDiscountRates.json");
+            var json = File.ReadAllText(AppDomain.CurrentDomain.BaseDirectory + @"/MerchantDiscountRates.json");
             Utils.mdr = JsonConvert.DeserializeObject<List<MerchantDiscount>>(json);
 
             var host = new WebHostBuilder()
